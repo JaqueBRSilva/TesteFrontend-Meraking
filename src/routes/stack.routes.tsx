@@ -1,3 +1,4 @@
+import { AntDesign } from '@expo/vector-icons';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 import Chat from '../app/Chat';
@@ -33,8 +34,10 @@ const AppRoutes: React.FC = () => {
                 options={{
                     headerShown: true,
                     headerTitle: '',
-                    headerBackVisible: true,
-                    headerBackImageSource: require('../../assets/icons/Union.png'),
+                    headerBackButtonMenuEnabled: true,
+                    headerLeft: () => (
+                        <AntDesign name="back" size={14} color="black" />
+                    ),
                     contentStyle: {
                         paddingHorizontal: 15,
                         backgroundColor: '#FFF'

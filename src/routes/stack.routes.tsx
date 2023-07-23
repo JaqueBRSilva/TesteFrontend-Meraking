@@ -8,56 +8,63 @@ import TabNavRoutes from './tab.routes';
 
 const stackRoutes = createNativeStackNavigator();
 
-const AppRoutes: React.FC = () => (
+const AppRoutes: React.FC = () => {
 
-    <stackRoutes.Navigator
-        initialRouteName='Home'
-        screenOptions={{
-            headerShown: false,
-        }}
-    >
-        <stackRoutes.Screen
-            name="Home"
-            component={TabNavRoutes}
-        />
-
-        <stackRoutes.Screen
-            name="Search"
-            component={Search}
-        />
-
-        <stackRoutes.Screen
-            name="Register"
-            component={Register}
-            options={{
-                contentStyle: {
-                    paddingHorizontal: 15,
-                    backgroundColor: '#FFF'
-                },
+    return (
+        <stackRoutes.Navigator
+            initialRouteName='Home'
+            screenOptions={{
+                headerShown: false,
             }}
-        />
+        >
+            <stackRoutes.Screen
+                name="Home"
+                component={TabNavRoutes}
+            />
 
-        <stackRoutes.Screen
-            name="Chat"
-            component={Chat}
-            options={{
-                contentStyle: {
-                    paddingHorizontal: 15,
-                    backgroundColor: '#FFF'
-                },
-                headerShown: true,
-                headerTitle: "Chats",
-                headerTitleAlign: 'center',
-                headerBackVisible: false
-            }}
-        />
+            <stackRoutes.Screen
+                name="Search"
+                component={Search}
+            />
 
-        <stackRoutes.Screen
-            name="Profile"
-            component={Profile}
-        />
+            <stackRoutes.Screen
+                name="Register"
+                component={Register}
+                options={{
+                    headerShown: true,
+                    headerTitle: '',
+                    headerBackVisible: true,
+                    headerBackImageSource: require('../../assets/icons/Union.png'),
+                    contentStyle: {
+                        paddingHorizontal: 15,
+                        backgroundColor: '#FFF'
+                    },
+                }}
+            />
 
-    </stackRoutes.Navigator>
-)
+            <stackRoutes.Screen
+                name="Chat"
+                component={Chat}
+                options={{
+                    contentStyle: {
+                        paddingHorizontal: 15,
+                        backgroundColor: '#FFF'
+                    },
+                    headerShown: true,
+                    headerTitle: "Chats",
+                    headerTitleAlign: 'center',
+                    headerBackVisible: false
+                }}
+            />
+
+            <stackRoutes.Screen
+                name="Profile"
+                component={Profile}
+            />
+
+        </stackRoutes.Navigator>
+    )
+}
+
 
 export default AppRoutes;

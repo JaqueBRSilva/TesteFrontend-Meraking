@@ -8,7 +8,7 @@ Teste * Meraking
 <br>
 
 <div align="center">
-    <img alt="Teste Front end" src="https://img.shields.io/badge/Teste-Front%20end-gold">
+    <img alt="Front end" src="https://img.shields.io/badge/Teste-Front%20end-gold">
     <img alt="Expo" src="https://img.shields.io/badge/Feito%20com-Expo-blue">
 </div>
 
@@ -24,15 +24,17 @@ As telas são: '<strong>Home</strong>', '<strong>Register</strong>' e '<strong>C
 
 <br>
 
-<h3 align="center">
+<div align="center">
   <img alt="Tela Home" src="https://live.staticflickr.com/65535/53067561657_f20634880f_k.jpg" width="251" height="500">
   <img alt="Tela Chats" src="https://live.staticflickr.com/65535/53068537875_80c12ee619_k.jpg" width="251" height="500">
   <img alt="Tela Register" src="https://live.staticflickr.com/65535/53068645448_5d173cbcd9_k.jpg" width="251" height="500">
-  
-  <br>
+</div>
 
-  [Design no Figma](https://www.figma.com/file/l11udXzpUbpupiibDbh02q/Figma-Basics-2?type=design)
-</h3>
+<br>
+
+<h1>✒ DESIGN </h1>
+
+> Veja no [Figma](https://www.figma.com/file/l11udXzpUbpupiibDbh02q/Figma-Basics-2?type=design)
 
 <br/>
 
@@ -41,7 +43,7 @@ As telas são: '<strong>Home</strong>', '<strong>Register</strong>' e '<strong>C
 - [Expo](https://docs.expo.dev/)
 - [React Navigation](https://reactnavigation.org/)
 - [TypeScript](https://www.typescriptlang.org/)
-<!-- - [Node.js](https://nodejs.org/en/) -->
+- [Node.js](https://nodejs.org/en/)
 
 <br/>
 

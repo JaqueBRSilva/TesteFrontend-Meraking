@@ -1,6 +1,7 @@
 import { Comfortaa_400Regular, Comfortaa_500Medium, useFonts } from '@expo-google-fonts/comfortaa';
 import { Roboto_400Regular, Roboto_700Bold, Roboto_900Black } from '@expo-google-fonts/roboto';
 import Routes from './src/routes';
+import { StatusBar } from 'expo-status-bar';
 
 const App = () => {
 
@@ -17,7 +18,10 @@ const App = () => {
   }
 
   return (
+    <>
+    <StatusBar style='auto'/>
     <Routes />
+    </>
   );
 }
 
